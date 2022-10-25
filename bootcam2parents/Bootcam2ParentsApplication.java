@@ -9,6 +9,15 @@ public class Bootcam2ParentsApplication implements CommandLineRunner {
 
 	public static void main(String[] args) {
 		SpringApplication.run(Bootcam2ParentsApplication.class, args);
+		
+		PersonBuilder pb=new PersonBuilder();
+		pb.setNombre("Juan");
+		pb.setApellido1("Ojeda");
+		pb.setApellido2("Vargas");
+		pb.setMinusvalido(false);
+		pb.setEdad(43);
+		pb.getResult().toString();
+		
 	}
 
 	@Override
